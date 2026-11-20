@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 15px;
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>DAILY NEWS</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>Sports</h2>
+            <p>Latest sports news.</p>
+        </div>
+
+        <div class="box">
+            <h2>Main News</h2>
+            <p>Latest news from around the world.</p>
+        </div>
+
+        <div class="box">
+            <h2>Technology</h2>
+            <p>Latest technology updates.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

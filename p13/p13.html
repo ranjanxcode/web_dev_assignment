@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox vs Grid</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: orange;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 30px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <h2>My Website</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>Main Content</h2>
+            <p>This is the main section.</p>
+        </div>
+
+        <div class="box">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+</body>
+</html>
